@@ -77,7 +77,11 @@ String? _name;
                   _name = value;
                 },
               ),
-              Text("jwhrfwbvjbvjwfw")
+              Text("jwhrfwbvjbvjwfw"),
+                  Text("jwhrfwbvjbvjwfw"),
+                      Text("jwhrfwbvjbvjwfw"),
+                          Text("jwhrfwbvjbvjwfw"),
+                              Text("jwhrfwbvjbvjwfw")
          ],),
       ),
     );
