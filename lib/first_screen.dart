@@ -45,7 +45,7 @@ String? _name;
         ),
       ),
  SizedBox(height: 40,),
- TextFormField(
+              TextFormField(
                 decoration: InputDecoration(
                   labelText: 'Name',
                   border: OutlineInputBorder(),
@@ -61,7 +61,23 @@ String? _name;
                   _name = value;
                 },
               ),
-      
+      TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Name',
+                  border: OutlineInputBorder(),
+                ),
+                // Validator for form validation
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your name';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  _name = value;
+                },
+              ),
+              Text("jwhrfwbvjbvjwfw")
          ],),
       ),
     );
